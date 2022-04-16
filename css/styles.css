@@ -159,6 +159,13 @@ footer a{
 }
 /* Desktop Viewport: Style rules for nav area. */
 @media (min-width: 1000px){
+    .desktop{
+        display: block;
+    }
+    
+    .mobile-tablet{
+        display: none;
+    }
     nav li{
       font-size: 1.5em;
 
