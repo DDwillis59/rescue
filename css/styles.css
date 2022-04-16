@@ -147,8 +147,16 @@ footer a{
   }
   nav li a{
   padding: 0.5em;
-
   }
+  .grid{
+    display: grid;
+    grid-template-columns: 2;
+    grid-gap: 10px;
+  }
+  aside{
+    grid-column: 1 / span 2;
+  }
+}
 /* Desktop Viewport: Style rules for nav area. */
 @media (min-width: 1000px){
     nav li{
@@ -162,10 +170,19 @@ footer a{
     nav li a:hover{
       color: #2a1f14;
       background-color: #f6eee4;
+      opacity: 0.5;
     }
     /* Desktop Viewport: Style rules for main content. */
     #info ul{
       margin-left: 5%;
+    }
+    .grid{
+      grid-template-columns: 3;
+      grid-gap: 30px;
+    }
+    aside{
+      grid-column: 1 / span 3;
+      font-size: 2em;
     }
 
 }
@@ -180,6 +197,13 @@ footer a{
   }
   main{
     background-color: #f6eee4;
+  }
+  .grid{
+    grid-template-columns: 4;
+  }
+  aside{
+    grid-column: 1 / span 4;
+    font-size: 3em;
   }
 }
 
